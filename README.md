@@ -1,6 +1,12 @@
-### jquery.rotate
+### jQuery Rotate
 
 Simple plugin that add rotate css property and animation
+
+### Usage
+
+$('.selector').css('rotate', 45);
+
+$('.selector').animate({rotate: '360'}, 2000);
 
 ### Demo
 
