@@ -21,7 +21,19 @@
         get: function(elem, computed, extra){
             var property = getTransformProperty(elem);
             if (property) {
-                return elem.style[property].replace(/.*rotate\((.*)deg\).*/, '$1');
+                var transform = elem.style[property];
+                if (transform) {
+                    return transform.replace(/.*rotate\((.*)deg\).*/, '$1');
+                } else {
+                    var matrix = getComputedStyle(elem, null)[property];
+                    if (matrix.match(/matrix\(1, *0, *0, *1, *0, *0\)/)) {
+                        return '';
+                    } else {
+                        var m = matrix.match(/matrix\([^,]+, *([^,]+),/);
+                        var angle = Math.round(Math.asin(m[1]) * (180/Math.PI));
+                        return angle;
+                    }
+                }
             } else {
                 return '';
             }
@@ -30,7 +42,6 @@
             var property = getTransformProperty(elem);
             if (property) {
                 value = parseInt(value);
-                $(elem).data('rotatation', value);
                 if (value == 0) {
                     elem.style[property] = '';
                 } else {

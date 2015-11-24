@@ -2,7 +2,7 @@
     "name": "rotate",
     "title": "jQuery Rotate",
     "description": "jQuery Rotate is simple plugin that add css rotate property and animation.",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "keywords": [
         "rotate", "css", "animation", "effect"
     ],
