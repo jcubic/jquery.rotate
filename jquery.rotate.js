@@ -5,7 +5,8 @@
  * http://www.gnu.org/licenses/lgpl.html
  */
 (function($) {
-    function getTransformProperty(element) {
+    var property = (function() {
+        var element = document.createElement('div');
         var properties = ['transform', 'WebkitTransform',
                           'MozTransform', 'msTransform',
                           'OTransform'];
@@ -16,10 +17,9 @@
             }
         }
         return false;
-    }
+    })();
     $.cssHooks['rotate'] = {
         get: function(elem, computed, extra){
-            var property = getTransformProperty(elem);
             if (property) {
                 var transform = elem.style[property];
                 if (transform) {
@@ -39,7 +39,6 @@
             }
         },
         set: function(elem, value){
-            var property = getTransformProperty(elem);
             if (property) {
                 value = parseInt(value);
                 if (value == 0) {
