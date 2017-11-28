@@ -2,8 +2,6 @@
 
 Simple plugin that add rotate css property and animation
 
-<a href="https://app.codesponsor.io/link/mm9ExaTRnnyn4TH8MFkSL6zG/jcubic/jquery.rotate" rel="nofollow"><img src="https://app.codesponsor.io/embed/mm9ExaTRnnyn4TH8MFkSL6zG/jcubic/jquery.rotate.svg" style="width: 888px; height: 68px;" alt="Sponsor" /></a>
-
 ### Usage
 
 $('.selector').css('rotate', 45);
