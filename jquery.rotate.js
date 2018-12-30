@@ -1,6 +1,6 @@
 /* 
  * JQuery CSS Rotate property using CSS3 Transformations
- * Copyright (c) 2011 Jakub Jankiewicz  <http://jcubic.pl>
+ * Copyright (c) 2011 Jakub T. Jankiewicz  <https://jcubic.pl>
  * licensed under the LGPL Version 3 license.
  * http://www.gnu.org/licenses/lgpl.html
  */

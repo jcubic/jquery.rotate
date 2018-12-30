@@ -16,4 +16,4 @@ $('.selector').animate({rotate: '360'}, 2000);
 
 Licensed under [GNU LGPL Version 3 license](http://www.gnu.org/licenses/lgpl.html)
 
-Copyright (c) 2011-2013 [Jakub Jankiewicz](http://jcubic.pl)
+Copyright (c) 2011-2013 [Jakub T. Jankiewicz](https://jcubic.pl)
